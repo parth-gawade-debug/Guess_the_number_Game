@@ -22,6 +22,7 @@ int main() {
 
         if(guess < 0 || guess > 20) {
             printf("Invalid input! Please enter a number between 0 and 20.\n");
+            no_of_guesses++; // No penalty for invalid input
         }
         else if (guess == random_number) {
             printf("Congratulations! You guessed the number correctly!\n");
