@@ -25,13 +25,13 @@ int main() {
         }
         else if(guess <random_number) {
             printf("Sorry wrong guess! The number is higher than %d.\n", guess);
-            break;
+            
         }
         else if(guess > random_number) {
             printf("Sorry wrong guess! The number is lower than %d.\n", guess);
-            break;
+            
         }
-        else {
+        else if(guess < 0 || guess > 20) {
             printf("Invalid input! Please enter a number between 0 and 20.\n");
         }
         
@@ -40,6 +40,6 @@ int main() {
         printf("Game over! You have used all your guesses. The number was %d.\n", random_number);
      }
         return 0;
-        
+
 
 }
